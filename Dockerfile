@@ -4,7 +4,7 @@ from debian:stretch-20190506-slim
 
 LABEL maintainer="Anders Draagen <andersdra@gmail.com>"
 
-ARG FLASHPRINT_RAR_URL='http://www.flashforge.com/wp-content/uploads/2017/04/flashprint_3.24.0_Linux64.rar'
+ARG FLASHPRINT_RAR_URL='https://www.flashforge.com/wp-content/uploads/2017/04/flashprint_3.24.0_Linux64.rar'
 
 ARG C_USER=flashprint
 ARG C_UID=1000
