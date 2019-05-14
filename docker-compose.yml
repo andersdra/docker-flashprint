@@ -1,0 +1,17 @@
+version: '2.3'
+
+services:
+  '3.24.0':
+    build:
+     context: .
+     dockerfile: Dockerfile
+# Dialog boxes randomly not showing? Uncomment next line
+#     ipc: host
+    environment:
+     - DISPLAY
+    volumes:
+     - ./3d_files:/3d_files
+     - ./flashprint_config:/flashprint/.FlashPrint
+     - /tmp/.X11-unix:/tmp/.X11-unix:ro
+    cap_drop:
+     - ALL
