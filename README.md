@@ -8,8 +8,8 @@ Or when pulled from Docker hub:
 docker run --name flashprint \\  
 --cap-drop=ALL \\  
 -e DISPLAY \\  
--v /tmp/.X11-unix:/tmp/.X11-unix:ro -v \\  
-$PWD/3d_files:/3d_files \\  
+-v /tmp/.X11-unix:/tmp/.X11-unix:ro \\  
+-v $PWD/3d_files:/3d_files \\  
 -v $PWD/flashprint_config:/flashprint/.FlashPrint \\  
 andersdra/flashprint
 
